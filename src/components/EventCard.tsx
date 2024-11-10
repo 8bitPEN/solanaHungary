@@ -44,6 +44,8 @@ function EventCard({
               })}
             </span>
             <motion.a
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{
                 backgroundColor: "#000",
                 color: "#FFF",

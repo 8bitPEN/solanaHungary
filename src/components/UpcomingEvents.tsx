@@ -30,7 +30,7 @@ function UpcomingEvents() {
           title={"Solana Hungary x Monkey Meetup Budapest"}
           description={"Join us for a Monke Meetup in Budapest."}
           date={new Date("2024-11-16T18:00")}
-          registerUrl={"/"}
+          registerUrl={"https://lu.ma/705rpj6u"}
         />
       </div>
       <div
