@@ -21,7 +21,7 @@ function Hero() {
         >
           <div>
             <img
-              src="/solana/solana_hungary/solana_hungary_logo.png"
+              src="./solana/solana_hungary/solana_hungary_logo.png"
               alt="The official Solana Hungary logo."
               className="max-h-60"
             />
