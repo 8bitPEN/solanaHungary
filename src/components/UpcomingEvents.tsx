@@ -26,7 +26,7 @@ function UpcomingEvents() {
           Upcoming <br /> Events
         </h1>
         <EventCard
-          img="/solana/solana_hungary/event_one.png"
+          // img="/solana/solana_hungary/event_one.png"
           title={"Solana Hungary x Monkey Meetup Budapest"}
           description={"Join us for a Monke Meetup in Budapest."}
           date={new Date("2024-11-16T18:00")}

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 interface EventCardProps {
-  img: string;
+  // img: string;
   title: string;
   description: string;
   date: Date;
@@ -9,7 +9,7 @@ interface EventCardProps {
 }
 
 function EventCard({
-  img,
+  // img,
   title,
   description,
   date,
