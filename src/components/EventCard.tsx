@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 interface EventCardProps {
-  // img: string;
+  img: string;
   title: string;
   description: string;
   date: Date;
@@ -9,7 +9,7 @@ interface EventCardProps {
 }
 
 function EventCard({
-  // img,
+  img,
   title,
   description,
   date,
@@ -18,7 +18,7 @@ function EventCard({
   return (
     <>
       <div className="max-w-[30rem]">
-        {/* <img src={img} className="max-w-[30rem]  rounded-t-2xl" /> */}
+        <img src={img} className="max-w-[30rem]  rounded-t-2xl" />
         <div
           className="
         flex flex-col 

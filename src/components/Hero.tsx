@@ -20,11 +20,11 @@ function Hero() {
         relative z-10"
         >
           <div>
-            {/* <img
+            <img
               src="/solana/solana_hungary/solana_hungary_logo.png"
               alt="The official Solana Hungary logo."
               className="max-h-60"
-            /> */}
+            />
           </div>
           <div className="flex flex-col mb-7">
             <h1 className="text-7xl font-bold mb-1">Solana Hungary</h1>
