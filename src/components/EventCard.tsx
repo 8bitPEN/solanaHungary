@@ -43,18 +43,21 @@ function EventCard({
                 hour12: true,
               })}
             </span>
-            <motion.a
-              target="_blank"
-              rel="noopener noreferrer"
-              whileHover={{
-                backgroundColor: "#000",
-                color: "#FFF",
-              }}
-              href={registerUrl}
-              className="border rounded-full border-black px-2 text-sm bg-white text-black"
-            >
-              Register Now
-            </motion.a>
+            <div className="flex justify-center items-center">
+              <motion.a
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{
+                  backgroundColor: "#000",
+                  color: "#FFF",
+                }}
+                href={registerUrl}
+                className="uppercase border rounded-full border-black px-2 text-sm bg-white text-black"
+              >
+                rsvp
+              </motion.a>
+            </div>
+
           </div>
         </div>
       </div>
