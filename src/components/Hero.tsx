@@ -16,8 +16,8 @@ function Hero() {
         text-white "
       >
         <div
-          className="flex flex-row gap-10 justify-center items-center
-        relative z-10"
+          className="flex flex-row gap-10 justify-center items-center flex-wrap
+        relative z-10 mx-3"
         >
           <div>
             <img
@@ -72,7 +72,6 @@ function Hero() {
             </div>
           </div>
         </div>
-        {/* <div className="hero-parliament"></div> */}
       </section>
     </>
   );

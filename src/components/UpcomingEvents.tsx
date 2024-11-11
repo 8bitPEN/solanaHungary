@@ -15,7 +15,7 @@ function UpcomingEvents() {
         id="events"
         className="
     grid
-    grid-cols-2
+    xl:grid-cols-2
     place-items-center
     gap-10
     text-white

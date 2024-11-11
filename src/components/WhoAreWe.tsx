@@ -20,7 +20,7 @@ function WhoAreWe() {
         "
       >
         <h1 className="text-7xl mb-2">Who are We?</h1>
-        <p className="text-xl mb-2">
+        <p className="text-xl mb-2 max-w-[50ch]">
           Solana Hungary is a community-driven initiative focused on empowering
           builders, developers, and creatives within the Solana ecosystem. Our
           mission is to bring together passionate individuals to create

@@ -13,15 +13,15 @@ function Navbar() {
         </div>
         <div className="flex gap-4 justify-center items-center relative z-60">
           <div>
-            <a href="./#events" className="relative">
+            <a href="./#events" className="relative hover:underline">
               Events
             </a>
           </div>
           <div>
-            <a href="./#socials">Socials</a>
+            <a href="./#socials" className="hover:underline">Socials</a>
           </div>
           <div>
-            <a href="./#aboutUs">About us</a>
+            <a href="./#aboutUs" className="hover:underline">About us</a>
           </div>
         </div>
       </div>
