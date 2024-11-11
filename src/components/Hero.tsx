@@ -1,9 +1,12 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 function Hero() {
   const arrowVariants = {
     hover: { x: 10 }, // Moves the arrow 10px to the right
   };
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <>
       <section
@@ -15,9 +18,14 @@ function Hero() {
         items-center
         text-white"
       >
-        <div
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: +20 }}
+          animate={isInView ? { opacity: 1, y: 0  } : { opacity: 0, y: -20 }}
+          transition={{ duration: 1 }}
           className="flex flex-row gap-10 justify-center items-center flex-wrap
         relative z-10 mx-3"
+
         >
           <div>
             <img
@@ -39,6 +47,7 @@ function Hero() {
                 rel="noopener noreferrer"
                 className="text-lg xl:text-xl uppercase rounded-full px-5 py-2 bg-gradient-to-r from-[#89212A] to-[#253528] flex items-center"
                 whileHover="hover"
+                whileTap="hover"
               >
                 Join The Community
                 <motion.span
@@ -56,6 +65,7 @@ function Hero() {
                 href="#aboutUs"
                 className="text-xl uppercase rounded-full px-5 py-2 bg-white text-black flex items-center"
                 whileHover="hover"
+                whileTap="hover"
               >
                 Learn More
                 <motion.span
@@ -71,7 +81,7 @@ function Hero() {
               </motion.a>
             </div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </>
   );
