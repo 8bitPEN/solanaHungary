@@ -22,7 +22,7 @@ function UpcomingEvents() {
     m-40
     "
       >
-        <h1 className="text-7xl font-bold uppercase underline">
+        <h1 className="text-5xl lg:text-7xl font-bold uppercase underline">
           Upcoming <br /> Events
         </h1>
         <EventCard

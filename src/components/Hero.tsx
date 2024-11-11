@@ -13,7 +13,7 @@ function Hero() {
         relative 
         flex justify-center
         items-center
-        text-white "
+        text-white"
       >
         <div
           className="flex flex-row gap-10 justify-center items-center flex-wrap
@@ -23,21 +23,21 @@ function Hero() {
             <img
               src="./solana/solana_hungary/solana_hungary_logo.png"
               alt="The official Solana Hungary logo."
-              className="max-h-60"
+              className=" max-h-32 lg:max-h-60"
             />
           </div>
           <div className="flex flex-col mb-7">
-            <h1 className="text-7xl font-bold mb-1">Solana Hungary</h1>
+            <h1 className="text-5xl lg:text-7xl font-bold mb-1">Solana Hungary</h1>
             <h2 className="text-2xl mb-5">
               Empowering builders through education, <br /> workshops and IRL
               events.
             </h2>
-            <div className="flex gap-5">
+            <div className="flex gap-5 flex-wrap">
               <motion.a
                 href="https://discord.gg/solanahungary"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xl uppercase rounded-full px-5 py-2 bg-gradient-to-r from-[#89212A] to-[#253528] flex items-center"
+                className="text-lg xl:text-xl uppercase rounded-full px-5 py-2 bg-gradient-to-r from-[#89212A] to-[#253528] flex items-center"
                 whileHover="hover"
               >
                 Join The Community
