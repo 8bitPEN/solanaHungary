@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import mapImage from "/solana/solana_hungary/only_map.png";
 
 export default function Research() {
   const arrowVariants = {
@@ -6,9 +7,12 @@ export default function Research() {
   };
   return (
     <section
-      className="min-h-[100lvh] bg-[url('./solana/solana_hungary/only_map.png')] bg-cover bg-no-repeat bg-center text-white
+      className="min-h-[100lvh] bg-cover bg-no-repeat bg-center text-white
          flex flex-row relative
          justify-center items-center"
+      style={{
+        backgroundImage: `url(${mapImage})`,
+      }}
     >
       <div className="flex justify-center items-center flex-col">
         <h1 className="text-5xl lg:text-7xl  uppercase">Research</h1>
