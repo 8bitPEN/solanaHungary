@@ -15,7 +15,6 @@ function WhoAreWe() {
         flex flex-col
         justify-center items-center
         text-white 
-        px-96
         text-center
         "
       >
