@@ -7,7 +7,7 @@ function Navbar() {
             <img
               src="./solana/solana_hungary/solana_hungary_logo.png"
               alt="The official logo of Solana Hungary."
-              className="max-h-12"
+              className="max-h-12" 
             />
           </a>
         </div>
