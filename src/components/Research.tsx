@@ -1,23 +1,18 @@
 import { motion } from "framer-motion";
-import mapImage from "/solana/solana_hungary/only_map.png";
-
 export default function Research() {
   const arrowVariants = {
     hover: { x: 10 }, // Moves the arrow 10px to the right
   };
   return (
     <section
-      className="min-h-[100lvh] bg-cover bg-no-repeat bg-center text-white
+      className="min-h-[100lvh] bg-cover bg-no-repeat bg-center bg-onlyone text-white
          flex flex-row relative
          justify-center items-center"
-      style={{
-        backgroundImage: `url(${mapImage})`,
-      }}
     >
       <div className="flex justify-center items-center flex-col">
         <h1 className="text-5xl lg:text-7xl  uppercase">Research</h1>
         <motion.a
-          href="https://discord.gg/solanahungary"
+          href="https://medium.com/@solanahungary/hungarian-crypto-economy-e224c2d2d65c"
           target="_blank"
           rel="noopener noreferrer"
           className="text-lg xl:text-xl text-center rounded-full px-5 py-2 flex items-center"
@@ -66,7 +61,7 @@ export default function Research() {
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://medium.com/@solanahungary/hungarian-crypto-economy-e224c2d2d65c"
+            href="https://medium.com/@solanahungary"
             className="flex"
           >
             <img

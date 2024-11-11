@@ -1,7 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@layer utilities {
+  .bg-onlyone {
+    background-image: url("assets/only_map.png");
+  }
+}
 /* global.css */
 @font-face {
   font-family: "ABCDiatype";
@@ -86,10 +90,11 @@
   width: 90%;
   z-index: 0;
 }
-section *{
+section * {
   z-index: 10;
 }
-*, html{
+*,
+html {
   scroll-behavior: smooth !important;
 }
 @layer base {
