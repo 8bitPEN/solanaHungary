@@ -17,8 +17,8 @@ function EventCard({
 }: EventCardProps) {
   return (
     <>
-      <div className="max-w-[20rem] sm:max-w-[30rem]">
-        <img src={img} className="max-w-[20rem] sm:max-w-[30rem]  rounded-t-2xl" />
+      <div className="max-w-[30rem]">
+        <img src={img} className="max-h-[30rem] rounded-t-2xl" />
         <div
           className="
         flex flex-col 

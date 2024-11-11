@@ -1,15 +1,17 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Research from "./components/Research";
 import UpcomingEvents from "./components/UpcomingEvents";
 import WhoAreWe from "./components/WhoAreWe";
 
 function App() {
   return (
-    <div className="font-diatype scroll-smooth">
+    <div className="font-diatype scroll-smooth relative">
       <Navbar />
       <Hero />
       <WhoAreWe />
       <UpcomingEvents />
+      <Research />
     </div>
   );
 }

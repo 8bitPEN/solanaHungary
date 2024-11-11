@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import IntroCard from "./IntroCard";
 
 function WhoAreWe() {
   const arrowVariants = {
@@ -79,6 +80,32 @@ function WhoAreWe() {
             &rarr;
           </motion.span>
         </motion.a>
+        <div className="grid md:grid-cols-2 justify-center items-center align-middle gap-20 mt-20">
+          <IntroCard
+            img="./solana/solana_hungary/us/1.png"
+            imgAlt=""
+            title="Community"
+            description="Join a vibrant network of enthusiasts and builders united by their passion for Web3 and the Solana ecosystem. Connect, collaborate, and grow together."
+          />
+          <IntroCard
+            img="./solana/solana_hungary/us/2.png"
+            imgAlt=""
+            title="Creativity"
+            description="Empowering innovators to turn ideas into impactful projects. We provide the tools, resources, and support to bring your vision to life."
+          />
+          <IntroCard
+            img="./solana/solana_hungary/us/3.png"
+            imgAlt=""
+            title="Education"
+            description="Learn and grow with us through workshops, events, and knowledge-sharing sessions. Dive into the world of decentralized technologies with hands-on guidance."
+          />
+          <IntroCard
+            img="./solana/solana_hungary/us/4.png"
+            imgAlt=""
+            title="Research"
+            description="Explore the latest advancements in blockchain and contribute to groundbreaking discoveries. Our focus is on pushing the boundaries of what’s possible."
+          />
+        </div>
       </section>
     </>
   );
