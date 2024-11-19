@@ -57,7 +57,6 @@ function EventCard({
                 rsvp
               </motion.a>
             </div>
-
           </div>
         </div>
       </div>
