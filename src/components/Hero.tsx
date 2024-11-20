@@ -1,4 +1,4 @@
-import { motion, useInView } from "framer-motion";
+import { easeIn, motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 function Hero() {
@@ -20,12 +20,10 @@ function Hero() {
       >
         <motion.div
           ref={ref}
-          initial={{ opacity: 0, y: +20 }}
-          animate={isInView ? { opacity: 1, y: 0  } : { opacity: 0, y: -20 }}
-          transition={{ duration: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           className="flex flex-row gap-10 justify-center items-center flex-wrap
         relative z-10 mx-3"
-
         >
           <div>
             <img
@@ -35,8 +33,10 @@ function Hero() {
             />
           </div>
           <div className="flex flex-col mb-7">
-            <h1 className="text-5xl lg:text-7xl font-bold mb-1">Solana Hungary</h1>
-            <h2 className="text-2xl mb-5">
+            <h1 className="text-5xl lg:text-7xl font-bold mb-1">
+              Solana Hungary
+            </h1>
+            <h2 className="text-2xl mb-5 font-light">
               Empowering builders through education, <br /> workshops and IRL
               events.
             </h2>
