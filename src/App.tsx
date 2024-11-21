@@ -2,7 +2,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Research from "./components/Research";
 import UpcomingEvents from "./components/UpcomingEvents";
-import WhoAreWe from "./components/WhoAreWe";
+import WhoAreWe from "./components/AboutUs";
 
 function App() {
   return (

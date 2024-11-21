@@ -5,6 +5,16 @@
   .bg-onlyone {
     background-image: url("assets/only_map.png");
   }
+  .bg-who-are-we {
+    background-image: url("assets/bg1.png");
+    background-size: cover;
+    background-position: center center;
+  }
+  .bg-our-mission{
+    background-image: url("assets/bg2.png");
+    background-size: cover;
+    background-position: center center;
+  }
 }
 /* global.css */
 @font-face {
@@ -77,19 +87,6 @@
   font-style: italic;
 }
 
-.hero-parliament {
-  position: absolute;
-  inset: 0;
-  margin: auto;
-  background-image: url("solana/solana_hungary/parliament.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center 120px; /* Adjust the vertical position */
-  opacity: 50%;
-  height: 90lvh;
-  width: 90%;
-  z-index: 0;
-}
 section * {
   z-index: 10;
 }

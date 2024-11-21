@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
   	extend: {
+		boxShadow: {
+			custom: '-4px 4px 4px hsla(0, 0%, 0%, 0.25)'
+		},
   		colors: {
   			'solana-purple': '#9945FF',
   			'solana-green': '#14F195',

@@ -1,7 +1,5 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import OurMission from "./OurMission";
-// import IntroCard from "./IntroCard";
 
 function WhoAreWe() {
   const arrowVariants = {
@@ -18,22 +16,10 @@ function WhoAreWe() {
   const isInView = useInView(ref, { once: true, amount: 1 });
   return (
     <>
-      <section
-        id="aboutUs"
-        className="
-        bg-[#253528]
-        min-h-[90lvh] 
-        relative 
-        flex flex-col
-        justify-center items-center
-        text-white 
-        text-center
-        px-20"
-        // bg-gradient-to-b to-[#89212A] from-[#253528]
-      >
+      <div className="px-10 pt-20 pb-12 bg-who-are-we rounded-3xl shadow-custom max-w-[80rem] mx-auto">
         {/* Ref on h1 to trigger the animation */}
         <motion.h1
-          className="text-5xl lg:text-7xl mb-2"
+          className="text-5xl lg:text-7xl mb-2 text-center"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={elementVariants}
@@ -41,9 +27,8 @@ function WhoAreWe() {
         >
           Who are We?
         </motion.h1>
-
         <motion.p
-          className="text-md lg:text-xl mb-2 max-w-[50ch] font-light"
+          className="text-md lg:text-xl mb-2 max-w-[70ch] font-light mx-auto text-justify md:text-center mt-3"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={elementVariants}
@@ -60,13 +45,13 @@ function WhoAreWe() {
           href="https://discord.gg/solanahungary"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-md uppercase rounded-full px-5 py-1 bg-gradient-to-r from-[#89212A] to-[#253528] flex items-center"
           whileHover="hover"
           whileTap="hover"
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
           variants={elementVariants}
           transition={{ delay: 0.8 }}
+          className="text-md uppercase rounded-full px-5 py-1 bg-gradient-to-r from-[#89212A] to-[#253528] flex items-center mx-auto w-fit shadow-custom mt-9 text-justify md:text-center"
         >
           Join us
           <motion.span
@@ -80,10 +65,8 @@ function WhoAreWe() {
             &rarr;
           </motion.span>
         </motion.a>
-        <OurMission />
-      </section>
+      </div>
     </>
   );
 }
-
 export default WhoAreWe;

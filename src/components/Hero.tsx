@@ -1,4 +1,4 @@
-import { easeIn, motion, useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
 function Hero() {
@@ -45,9 +45,9 @@ function Hero() {
                 href="https://discord.gg/solanahungary"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-lg xl:text-xl uppercase rounded-full px-5 py-2 bg-gradient-to-r from-[#89212A] to-[#253528] flex items-center"
                 whileHover="hover"
                 whileTap="hover"
+                className="text-lg xl:text-xl uppercase rounded-full px-5 py-2 bg-gradient-to-r from-[#89212A] to-[#253528] flex items-center shadow-custom"
               >
                 Join The Community
                 <motion.span
@@ -63,9 +63,9 @@ function Hero() {
               </motion.a>
               <motion.a
                 href="#aboutUs"
-                className="text-xl uppercase rounded-full px-5 py-2 bg-white text-black flex items-center"
                 whileHover="hover"
                 whileTap="hover"
+                className="text-xl uppercase rounded-full px-5 py-2 bg-white text-black flex items-center shadow-custom"
               >
                 Learn More
                 <motion.span
