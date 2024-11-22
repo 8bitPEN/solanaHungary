@@ -24,8 +24,7 @@ interface EventData {
   };
 }
 function UpcomingEvents() {
-  const baseUrl = import.meta.env.VITE_STRAPI_URL;
-  const apiUrl = "admin.solanahungary.hu/api/events?populate=*";
+  const apiUrl = "https://admin.solanahungary.hu/api/events?populate=*";
   const { data, loading } = useData(apiUrl);
   return (
     <section
