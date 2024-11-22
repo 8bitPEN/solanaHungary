@@ -4,8 +4,6 @@ import {
   CarouselApi,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "./ui/carousel";
 import { useEffect, useState } from "react";
 import React from "react";
