@@ -59,7 +59,7 @@ function UpcomingEvents() {
                   title={e.title}
                   description={e.description}
                   date={e.date}
-                  img={baseUrl + e.image.url}
+                  img={e.image.url}
                   registerUrl={e.url}
                   key={e.id}
                 />
