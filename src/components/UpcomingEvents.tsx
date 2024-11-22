@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import EventCard from "./EventCard";
+import { motion, useInView } from "framer-motion";
 
 interface EventContent {
   title: string;
@@ -26,6 +27,8 @@ interface EventData {
 function UpcomingEvents() {
   const apiUrl = "https://admin.solanahungary.hu/api/events?populate=*";
   const { data, loading } = useData(apiUrl);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 1 });
   return (
     <section
       className="
@@ -38,6 +41,7 @@ function UpcomingEvents() {
         py-20"
     >
       <div
+        ref={ref}
         id="events"
         className="
     grid
@@ -46,9 +50,12 @@ function UpcomingEvents() {
     gap-10
     text-white"
       >
-        <h1 className="text-5xl lg:text-7xl font-bold uppercase underline">
+        <motion.h1
+        initial={{opacity: 0, y: 20}}
+        animate={isInView ? {opacity: 1, y: 0} : {opacity: 0, y: 20}}
+        className="text-5xl lg:text-7xl font-bold uppercase underline">
           Upcoming <br /> Events
-        </h1>
+        </motion.h1>
         {loading && <p>Loading upcoming events...</p>}
         {!loading &&
           data != null &&
@@ -58,7 +65,7 @@ function UpcomingEvents() {
                 <EventCard
                   title={e.title}
                   description={e.description}
-                  date={e.date}
+                  date={new Date(e.date)}
                   img={e.image.url}
                   registerUrl={e.url}
                   key={e.id}

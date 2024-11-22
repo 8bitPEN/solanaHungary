@@ -8,17 +8,18 @@ interface EventCardProps {
   registerUrl: string;
 }
 
-function EventCard({
+export default function EventCard({
   img,
   title,
   description,
   date,
   registerUrl,
 }: EventCardProps) {
+  console.log(date);
   return (
     <>
       <div className="max-w-[30rem]">
-        <img src={img} className="max-h-[30rem] rounded-t-2xl" />
+        <img src={img} className="max-h-[30rem] rounded-t-2xl w-full" />
         <div
           className="
         flex flex-col 
@@ -31,7 +32,7 @@ function EventCard({
             <span className="font-bold">{title}</span>
             <span>{description}</span>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between gap-10">
             <span className="text-gray-500 text-sm">
               {date.toLocaleString("en-us", {
                 weekday: "long",
@@ -49,7 +50,7 @@ function EventCard({
                 rel="noopener noreferrer"
                 whileHover={{
                   backgroundColor: "#000",
-                  color: "#FFF",
+                  color: "#fff",
                 }}
                 href={registerUrl}
                 className="uppercase border rounded-full border-black px-2 text-sm bg-white text-black"
@@ -63,5 +64,3 @@ function EventCard({
     </>
   );
 }
-
-export default EventCard;

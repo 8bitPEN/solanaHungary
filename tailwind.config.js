@@ -13,6 +13,10 @@ export default {
   		colors: {
   			'solana-purple': '#9945FF',
   			'solana-green': '#14F195',
+			'solana-pink': '#EB54BC',
+			'solana-blue': '#64A8F2',
+			'solana-aqua': '#80ECFF',
+			'solana-orange': '#FF754A',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
