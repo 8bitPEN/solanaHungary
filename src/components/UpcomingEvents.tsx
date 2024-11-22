@@ -89,7 +89,6 @@ function useData(url: string) {
       ignore = true;
     };
   }, [url]);
-  console.log(data);
   return { data, loading };
 }
 
